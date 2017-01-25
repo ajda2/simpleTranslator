@@ -36,12 +36,12 @@ class ArrayTranslator implements ITranslator {
 			return $this->langTable[$code];
 		}
 
-		if (isset($this->defaultLangTable[$code])) {
-			return $this->defaultLangTable[$code];
-		}
-
 		if ($this->strictMode) {
 			throw new MissingTranslationException("Missing translation for '{$code}'");
+		}
+
+		if (isset($this->defaultLangTable[$code])) {
+			return $this->defaultLangTable[$code];
 		}
 
 		return $code;
