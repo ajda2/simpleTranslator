@@ -1,0 +1,19 @@
+{
+  "name": "ajda2/simple-translator",
+  "description": "Very simple translator for static php web page",
+  "homepage": "https://github.com/ajda2/simpleTranslator",
+  "license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+  "authors": [
+    {
+      "name": "Michal Tichý",
+      "homepage": "http://www.tichy-vyvojar.cz/"
+    }
+  ],
+  "require": {
+    "php": ">=5.6.0"
+  },
+  "autoload": {
+    "classmap": ["src/"]
+  },
+  "minimum-stability": "dev"
+}
